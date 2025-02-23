@@ -1,71 +1,27 @@
-**ETL de Datos de Hoteles y Eventos en Madrid**
+# Proyecto ETL: Análisis de Hoteles y Eventos en Madrid
 
-*Descripción del Proyecto*
+## Descripción del Proyecto
 
-Este proyecto tiene como objetivo extraer, transformar y cargar (ETL) datos de reservas hoteleras en Madrid, incorporando información de la competencia y eventos relevantes para análisis.
+**Objetivo:** Extraer, transformar y cargar (ETL) datos de hoteles y eventos en Madrid para generar insights relevantes.
 
-*Estructura del Proyecto*
+## Requisitos
 
-El proyecto está estructurado en los siguientes pasos:
+### **Extracción de Datos**
+- **Hoteles:** Cargar archivo `reservas_hoteles.parquet`.
+- **Competencia:** Web scraping de [Ibis Accor](https://ibis.accor.com/es/destination/city/hotels-madrid-v2418.html).
+- **Eventos:** API del Ayuntamiento de Madrid: [Eventos en Madrid](https://datos.madrid.es/portal/site/egob/).
 
-*Extracción de Datos*
+### **Transformación de Datos**
+- Limpieza y estructuración de los datos extraídos.
+- Enriquecimiento de reservas con información de eventos en las mismas fechas.
 
-Lectura de datos desde un archivo Parquet (reservas_hoteles.parquet).
-
-Web Scraping de hoteles de la competencia desde la web de Ibis Accor.
-
-Consumo de la API de eventos del Ayuntamiento de Madrid.
-
-*Transformación de Datos*
-
-Limpieza y estandarización de datos.
-
-Conversión de tipos de datos y validación de valores nulos.
-
-Enriquecimiento de los datos de reservas con eventos en Madrid.
-
-*Carga de Datos*
-
-Creación y carga de datos en PostgreSQL con el siguiente esquema:
-
-ciudad
-
-eventos
-
-hoteles
-
-clientes
-
-reservas
-
-*Consultas y Análisis*
-
-Identificación de los 10 clientes con mayor gasto.
-
-Comparación de ingresos entre hoteles propios y de la competencia.
-
-Análisis temporal de reservas y precios.
-
-*Instalación y Uso*
-
-Requisitos
-
-Python 3.8+
-
-PostgreSQL
-
-Bibliotecas necesarias:
-
-pandas 
-psycopg2 s
-elenium 
-requests
+### **Carga de Datos**
+- Almacenar datos en PostgreSQL con las tablas correspondientes.
 
 
-**Contribuciones*
 
-Si deseas contribuir, por favor haz un fork del repositorio y envía un Pull Request con tus mejoras.
 
-*Contacto*
+## **Autora/Autor**
+- **Quique Brotons**  
+- Contacto: [quiquebrotons83@gmail.com]  
 
-Para cualquier duda o sugerencia, contáctame en quiquebrotons83@gmail.com.
