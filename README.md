@@ -16,6 +16,7 @@
 - Enriquecimiento de reservas con información de eventos en las mismas fechas.
 
 ### **Carga de Datos**
+- Cargamos todas las tablas para insertar los csv, correspondientes a Hoteles_unidos, y eventos.
 - Almacenar datos en PostgreSQL con las tablas correspondientes.
 
 
