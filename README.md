@@ -2,7 +2,12 @@
 
 ## Descripción del Proyecto
 
-**Objetivo:** Extraer, transformar y cargar (ETL) datos de hoteles y eventos en Madrid para generar insights relevantes.
+**Objetivo:** Extraer, transformar y cargar (ETL) datos de hoteles y eventos en Madrid para generar insights relevantes. 
+Con  ello conseguimos un Análisis Eda de los datos, Transformación de las columnas y tipo de dato para que sea eficaz para 
+su posterior analisis y carga a un BBDD. A continuación nuestro Objetivo es realizar un scraping de una web en el trabajamos
+los aspectos más fundamentales del scrapeo. Y para finalizar accedemos a la web del Ayuntamiento de Madrid para ver los eventos
+y conseguir mediante API los eventos que nos piden en el proyecto. Filtrando por nuestros interes para su extracción.
+
 
 ## Requisitos
 
